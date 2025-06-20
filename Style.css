@@ -1,0 +1,839 @@
+/* Base Styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Base Styles (unchanged) */
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap'); */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+a {
+    cursor:pointer;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+.container {
+    /* max-width: 1200px; */
+    height: 90%;
+    width: 100%;
+    /* margin: 0 auto; */
+    /* padding: 0 20px; */
+    /* background-color: black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Header Section */
+header {
+    background: linear-gradient(135deg, #090450 0%, #2575fc 100%);
+    color: white;
+    text-align: center;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.navBar{
+    height: 5%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    position: fixed;
+    justify-content: center;
+    z-index: 1;
+}
+
+.navBarChild{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navBarGrandChild{
+    height: 100%;
+    width: 20%;
+}
+
+.navBarTittle{
+    font-size: 1.3rem;
+    color: rgb(19, 15, 41);
+    text-decoration: none;
+    /* font-weight: bold; */
+}
+
+.navBarTittle:hover{
+    color: blue;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.header-content {
+    position: relative;
+    z-index: 2;
+}
+
+.header-bg {
+    /* position: absolute; */
+    /* top: 0;
+    left: 0; */
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 10%, transparent 10.5%);
+    background-size: 20px 20px;
+    z-index: 1;
+}
+
+h1 {
+    font-size: 4rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #fff;
+    color: #6a11cb;
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* About Section */
+.about {
+    /* padding: 100px 0; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: 2.5rem;
+    color: #333;
+    position: relative;
+}
+
+.section-title:after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    margin: 15px auto 0;
+    border-radius: 2px;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 50vh;
+    width: 100vw;
+    /* gap: 50px; */
+}
+
+.profile-pic {
+    /* flex: 0 0 35%; */
+    height: 100%;
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* position: relative; */
+    border-radius: 50%;
+}
+
+.profile-pic img {
+    /* width: 100%;     */
+    border-radius: 50%;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.profile-pic:before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 100%;
+    height: 100%;
+    border: 4px solid #6a11cb;
+    border-radius: 15px;
+    z-index: -1;
+}
+
+.about-text {
+    flex: 0 0 60%;
+}
+
+.about-text h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #6a11cb;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+/* Skills Section */
+.skills {
+    padding: 100px 0;
+    background-color: #f9f9f9;
+}
+
+.skills-container {
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px; */
+    display: flex;
+    align-items: center;
+    width: 70%;
+    justify-content: space-around;
+}
+
+.skill-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: white;
+    border-radius: 15px;
+    /* padding: 30px; */
+    height: 15vh;
+    width: 15%;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+
+/* .skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+} */
+
+.img1{
+    height: 75px;
+    width: 75px;
+}
+
+.skill-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    display: inline-block;
+    color: #6a11cb;
+}
+
+.skill-title {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+.ptag{
+    color: white;
+    font-size: 1.5em;
+    /* letter-spacing: ; */
+    line-height: 70px;
+}
+
+.skill-description {
+    color: #666;
+    font-size: 1rem;
+}
+
+/* Portfolio Section */
+.portfolio {
+    padding: 100px 0;
+    background-color: #fff;
+}
+
+.portfolio-filter {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.img3{
+    height: 200px;
+    width: 200px;
+}
+
+.filter-btn {
+    background: none;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    color: #666;
+    transition: all 0.3s ease;
+    border-radius: 20px;
+}
+
+.filter-btn.active, .filter-btn:hover {
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    color: white;
+}
+
+.portfolio-grid {
+    height: auto;
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
+    gap: 30px;
+}
+
+.portfolio-item {
+    height: 300px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+.portfolio-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.5s ease;
+}
+
+.portfolio-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(12, 13, 23, 0.9) 0%, rgba(37, 117, 252, 0.9) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.portfolio-item:hover .portfolio-overlay {
+    opacity: 1;
+}
+
+.portfolio-item:hover .portfolio-img {
+    transform: scale(1.1);
+}
+
+.portfolio-title {
+    color: rgb(89, 255, 0);
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.portfolio-category {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+}
+
+/* Contact Section */
+.contact {
+    /* padding: 100px 0; */
+    background: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contact .section-title {
+    color: white;
+}
+
+.contact .section-title:after {
+    background: white;
+}
+
+.contact-form {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #6a11cb;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(106, 17, 203, 0.2);
+}
+
+textarea.form-control {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.submit-btn {
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.submit-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.social-links {
+    margin-bottom: 20px;
+}
+
+.social-link {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+    margin: 0 5px;
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    background-color: rgba(255,255,255,0.2);
+    transform: translateY(-3px);
+}
+
+.copyright {
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.7);
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .profile-pic {
+        flex: 0 0 100%;
+        max-width: 400px;
+        margin: 0 auto 40px;
+    }
+    
+    .about-text {
+        flex: 0 0 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3rem;
+    }
+    
+    .subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .contact-form {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .navBar{
+        display: none;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    .portfolio-filter {
+        flex-wrap: wrap;
+    }
+    
+    .filter-btn {
+        margin-bottom: 10px;
+    }
+}
+
+
+/* ... (Your existing base styles remain unchanged) ... */
+
+/* Responsive Design */
+
+/* Large Desktops (1200px and above) - Base styles apply */
+
+/* Medium Desktops/Laptops (992px - 1199px) */
+@media (max-width: 1199px) {
+    .container {
+        padding: 0 15px; /* Reduce padding for smaller screens */
+    }
+
+    h1 {
+        font-size: 3.5rem; /* Slightly smaller heading */
+    }
+
+    .subtitle {
+        font-size: 1.4rem;
+    }
+
+    .section-title {
+        font-size: 2.3rem;
+    }
+
+    .about-content {
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .profile-pic {
+        width: 40%;
+    }
+
+    .skills-container {
+        width: 80%; /* Slightly wider on medium screens */
+    }
+
+    .skill-card {
+        width: 18%; /* Adjust skill card size */
+    }
+
+    .portfolio-grid {
+        gap: 20px; /* Reduce gap between portfolio items */
+    }
+
+    .portfolio-item {
+        width: 280px;
+        height: 280px;
+    }
+}
+
+/* Tablets (768px - 991px) */
+@media (max-width: 991px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    h1 {
+        font-size: 3rem; /* Further reduce heading size */
+    }
+
+    .subtitle {
+        font-size: 1.3rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .nevBarChild {
+        width: 70%; /* Adjust navbar width */
+    }
+
+    .nevBarTittle {
+        font-size: 1.1rem; /* Smaller navbar links */
+    }
+
+    .about-content {
+        flex-direction: column; /* Stack profile pic and text */
+        text-align: center;
+        height: auto;
+    }
+
+    .profile-pic {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+
+    .about-text {
+        width: 100%;
+    }
+
+    .skills-container {
+        flex-wrap: wrap; /* Allow skills to wrap */
+        justify-content: center;
+        width: 90%;
+    }
+
+    .skill-card {
+        width: 30%; /* Larger skill cards on tablets */
+        margin-bottom: 20px;
+    }
+
+    .portfolio-grid {
+        gap: 15px;
+    }
+
+    .portfolio-item {
+        width: 250px;
+        height: 250px;
+    }
+
+    .ptag {
+        font-size: 1.3rem; /* Adjust contact text size */
+        line-height: 50px;
+    }
+}
+
+/* Large Mobile (576px - 767px) */
+@media (max-width: 767px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .subtitle {
+        font-size: 1.2rem;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .nevBarChild {
+        width: 100%; /* Full-width navbar */
+        justify-content: space-evenly;
+    }
+
+    .nevBarTittle {
+        font-size: 1rem; /* Smaller navbar links */
+    }
+
+    .about-content {
+        padding: 20px;
+    }
+
+    .profile-pic {
+        width: 70%; /* Larger profile pic on mobile */
+    }
+
+    .about-text h3 {
+        font-size: 1.5rem;
+    }
+
+    .about-text p {
+        font-size: 1rem;
+    }
+
+    .skills-container {
+        flex-direction: column; /* Stack skills vertically */
+        width: 100%;
+    }
+
+    .skill-card {
+        width: 80%; /* Full-width skill cards */
+        height: auto;
+        padding: 20px;
+    }
+
+    .portfolio-filter {
+        flex-wrap: wrap; /* Allow filter buttons to wrap */
+        justify-content: center;
+    }
+
+    .filter-btn {
+        margin-bottom: 10px;
+        padding: 8px 15px;
+    }
+
+    .portfolio-grid {
+        gap: 10px;
+    }
+
+    .portfolio-item {
+        width: 100%; /* Full-width portfolio items */
+        height: 200px;
+    }
+
+    .portfolio-img {
+        height: 200px;
+        width:100%;
+    }
+
+    .portfolio-title {
+        font-size: 1.2rem;
+    }
+
+    .portfolio-category {
+        font-size: 0.8rem;
+    }
+
+    .ptag {
+        font-size: 1.2rem;
+        line-height: 40px;
+    }
+}
+
+/* Small Mobile (below 576px) */
+@media (max-width: 575px) {
+    .container {
+        padding: 0 5px; /* Minimal padding on small screens */
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .nevBar {
+        height: auto; /* Allow navbar to grow */
+        padding: 10px 0;
+    }
+
+    .nevBarChild {
+        flex-direction: column; /* Stack navbar links vertically */
+        align-items: center;
+        width: 100%;
+    }
+
+    .nevBarTittle {
+        font-size: 0.9rem;
+        margin: 10px 0; /* Space between stacked links */
+    }
+
+    .about-content {
+        padding: 15px;
+    }
+
+    .profile-pic {
+        width: 100%; /* Full-width profile pic */
+    }
+
+    .about-text h3 {
+        font-size: 1.3rem;
+    }
+
+    .about-text p {
+        font-size: 0.9rem;
+    }
+
+    .skills-container {
+        padding: 10px;
+    }
+
+    .skill-card {
+        width: 100%; /* Full-width skill cards */
+        padding: 15px;
+    }
+
+    .skill-title {
+        font-size: 1.2rem;
+    }
+
+    .portfolio-filter {
+        padding: 10px;
+    }
+
+    .filter-btn {
+        padding: 6px 10px;
+        font-size: 0.9rem;
+    }
+
+    .portfolio-grid {
+        gap: 5px;
+    }
+
+    .portfolio-item {
+        height: 180px;
+        width: 300px;
+    }
+
+    .portfolio-img {
+        height: 180px;
+        width: 100%;
+    }
+
+    .portfolio-title {
+        font-size: 1rem;
+    }
+
+    .portfolio-category {
+        font-size: 0.7rem;
+    }
+
+    .ptag {
+        font-size: 1rem;
+        line-height: 30px;
+    }
+}

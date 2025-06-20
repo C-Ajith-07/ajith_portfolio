@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="navBar">
+            <div class="navBarChild"></div>
+            <div class="navBarChild">
+                <div class="nevBarGrandChild"></div>
+                <a href="#home" class="navBarTittle">Home</a>
+                <a href="#about" class="navBarTittle">About</a>
+                <a href="#skills" class="navBarTittle">Skills</a>
+                <a href="#project" class="navBarTittle">Project</a>
+                <a href="#contact" class="navBarTittle">Contact</a>
+            </div>
+        </div>
+        <div class="container header-bg" id="home">
+            <div class="header-content">
+                <h1>Ajith kumar C</h1>
+                <p class="subtitle">Back-End Developer</p>
+                <a href="#project" class="cta-button">View my work</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="profile-pic">
+                    <img src="ajith zsttk.jpeg" alt="Profile Picture">
+                </div>
+                <div class="about-text">
+                    <h3>Hello, I'm Ajith Kumar</h3>
+                    <p>I'm Passionate about solving problems and learning.</p>
+                    <p>I really like sharing what I know with others. It's helps to improve my knowledge</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-container">
+                <div class="skill-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0azWb7Rl8nurvcSMYBgDVjG0YDP56OGYFaA&s" class="img1">
+                    <!-- <div class="skill-icon">🎨</div> -->
+                    <h3 class="skill-title">JAVA</h3>
+                    <!-- <p class="skill-description">Creating intuitive and engaging user experiences with a focus on usability and aesthetics. Expert in Figma, Adobe XD, and Sketch.</p> -->
+                </div>
+                <div class="skill-card">
+                    <!-- <div class="skill-icon">💻</div> -->
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR51pFQ_DIYMCw2xzgc107BW98OMIQZgqDGUA&s" class="img1">
+                    <h3 class="skill-title">Java Script</h3>
+                    <!-- <p class="skill-description">Building responsive and interactive websites using modern HTML, CSS, JavaScript, and frameworks like React and Vue.js.</p> -->
+                </div>
+                <div class="skill-card">
+                    <!-- <div class="skill-icon">🔍</div> -->
+                    <img src="https://static.vecteezy.com/system/resources/previews/013/313/458/non_2x/html-icon-3d-rendering-illustration-vector.jpg" alt="" class="img1">
+                    <h3 class="skill-title">Html</h3>
+                    <!-- <p class="skill-description">Developing cohesive brand identities including logos, color palettes, typography, and visual guidelines that resonate with target audiences.</p> -->
+                </div>
+                <div class="skill-card">
+                    <!-- <div class="skill-icon">📱</div> -->
+                    <img src="https://logowik.com/content/uploads/images/css-icon5555.logowik.com.webp" alt="" class="img1">
+                    <h3 class="skill-title">Css</h3>
+                    <!-- <p class="skill-description">Designing mobile-first experiences that provide seamless functionality across all device sizes.</p> -->
+                </div>
+                <div class="skill-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1Pa4ygJZKJnzFxaPJY85O8vNSqgkUibzu5qqhIXT0cWa1qHP7ooGINV79eJ4ETYovLFM&usqp=CAU" alt="" class="img1">
+                    <h3 class="skill-title">Mysql</h3>
+                    <!-- <p class="skill-description">Analyzing complex problems and finding effective solutions through critical thinking and creativity.</p> -->
+                </div>
+                <div class="skill-card">
+                    <img src="data:image/png;base64,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" alt="" class="img1">
+                    <h3 class="skill-title">ember js</h3>
+                    <!-- <p class="skill-description">Analyzing complex problems and finding effective solutions through critical thinking and creativity.</p> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="project">
+        <div class="container">
+            <h2 class="section-title">Project</h2>
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="java">Java</button>
+                <button class="filter-btn" data-filter="js">Java Script</button>
+                <button class="filter-btn" data-filter="html">Html&css</button>
+                <button class="filter-btn" data-filter="Scratch">Scratch</button>
+            </div>
+            <div class="portfolio-grid">
+                <a href="https://github.com/ThoufeekRZ/HireExpert" target="_blank">
+                    <div class="portfolio-item" data-category="java">
+                        <img src="logo.png" alt="">
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title">Hire Expert</h3>
+                            <p class="portfolio-category">Java , React , Mysql</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://github.com/C-Ajith-07/javaProjects" target="_blank">
+                    <div class="portfolio-item" data-category="java">
+                        <img src="ArrayList.jpeg" alt="Project 1" class="portfolio-img img3">
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title">ArrayList</h3>
+                            <p class="portfolio-category">Java</p>
+                        </div>
+                        <!-- <div class="portfolio-overlay"></div> -->
+                    </div>
+                </a>
+                <a href="https://github.com/C-Ajith-07/CarSellingSystem" target="_blank">
+                    <div class="portfolio-item" data-category="java">
+                        <img src="carSellingsystem.jpeg" alt="Project 2" class="portfolio-img img3">
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title">Car selling System</h3>
+                            <p class="portfolio-category">Java, Mysql</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://ajithkumarchermathurai-3351-8443.zcodeusers.in/Js_Project/" target="_blank">
+                    <div class="portfolio-item" data-category="js">
+                        <img src="typing.jpeg" alt="Project 2" class="portfolio-img img3">
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title">Type Writting</h3>
+                            <p class="portfolio-category">Javascript, Html&css</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://ajithkumarchermathurai-3351-8443.zcodeusers.in/Js_Assignment_023/" target="_blank">
+                    <div class="portfolio-item" data-category="js">
+                        <img src="rockPaper.jpeg" alt="Project 3" class="portfolio-img img3">
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title">Rock paper Scissers</h3>
+                            <p class="portfolio-category">JavaScript, html&css</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://ajithkumarchermathurai-3351-8443.zcodeusers.in/calculator/" target="_blank">
+                    <div class="portfolio-item" data-category="js">
+                        <img src="calculator.png" class="portfolio-img img3">
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title">Calculator</h3>
+                            <p class="portfolio-category">JavaScript, Html&css</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://ajithkumarchermathurai-3351-8443.zcodeusers.in/final_project/first.html"
+                    target="_blank">
+                    <div class="portfolio-item" data-category="html">
+                        <img src="download.jpeg" alt="Project 3" class="portfolio-img img3">
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title">Taj hotels</h3>
+                            <p class="portfolio-category">Html&Css</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://ajithkumarchermathurai-3351-8443.zcodeusers.in/Assignment_025/second.html"
+                    target="_blank">
+                    <div class="portfolio-item" data-category="html">
+                        <img src="lorumn.jpeg" class="portfolio-img img3">
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title">LOREM IPSUM</h3>
+                            <p class="portfolio-category">Html&css</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://scratch.mit.edu/projects/1036693995/" target="_blank">
+                    <div class="portfolio-item" data-category="Scratch">
+                        <img src="zoho .jpeg" alt="Project 4" class="portfolio-img img3">
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title">zoho</h3>
+                            <p class="portfolio-category">Scratch</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://scratch.mit.edu/projects/1033982910/" target="_blank">
+                    <div class="portfolio-item" data-category="Scratch">
+                        <img src="plaction.png" alt="Project 5" class="portfolio-img img3">
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title">Plactions</h3>
+                            <p class="portfolio-category">Scratch</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <p class="section-title">Contact Me</p>
+        <p class="ptag">Mail Id : ajithkumar.chermathurai@zohocorp.com</p>
+        <p class="ptag">Phone : 9072869265</p>
+        <p class="ptag">EmpId : zsttk-402/24</p>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const portfolioItems = document.querySelectorAll('.portfolio-item');
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterBtns.forEach(btn => btn.classList.remove('active'));
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    const filterValue = this.getAttribute('data-filter');
+                    
+                    portfolioItems.forEach(item => {
+                        if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                            item.style.display = 'block';
+                            item.parentElement.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                            item.parentElement.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
